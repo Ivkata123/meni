@@ -1,6 +1,7 @@
 body {
     font-family: 'Georgia', serif;
-    background-color: #f2e6d4;
+    background: url('https://example.com/bbq-background.jpg') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 20px;
     color: #4a3a2e;
@@ -9,36 +10,37 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    border: 2px solid #c4a07f;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    border: 3px solid #c4a07f;
+    position: relative;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 40px;
-    position: relative;
+    margin-bottom: 50px;
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .logo {
-    width: 150px;
+    width: 180px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding: 0;
     margin: 0;
 }
@@ -47,140 +49,193 @@ body {
     text-decoration: none;
     color: #5c4a3b;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
     font-family: 'Georgia', serif;
-    display: block;
-    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-links a:hover {
     color: #8c6b4e;
-    transform: scale(1.1);
+    border-bottom: 2px solid #8c6b4e;
 }
 
 h1 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: #5c4a3b;
-    font-family: 'Georgia', serif;
-    text-align: center;
+    font-size: 4em;
+    color: #8c6b4e;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
-
 
 .language-selector {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .language-selector button {
     margin: 5px;
-    padding: 12px 24px;
+    padding: 15px 30px;
     background-color: #8c6b4e;
     color: #fff;
     border: none;
-    border-radius: 6px;
-    font-size: 1.1em;
+    border-radius: 8px;
+    font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-family: 'Georgia', serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .language-selector button:hover {
     background-color: #6f4f3d;
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* menito */
 .menu {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .menu-section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .menu-section h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: #5c4a3b;
-    border-bottom: 3px solid #8c6b4e;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-family: 'Georgia', serif;
+    border-bottom: 4px solid #8c6b4e;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
     text-align: center;
+    letter-spacing: 0.5px;
 }
 
 .menu-section ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 .menu-section li {
-    padding: 12px 0;
-    font-size: 1.3em;
-    border-bottom: 1px solid #d5c4a1;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 15px 0;
+    font-size: 1.4em;
+    border-bottom: 2px solid #d5c4a1;
     color: #4a3a2e;
     transition: color 0.3s ease, background-color 0.3s ease;
-    font-family: 'Georgia', serif;
-    display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-section li:hover {
-    color: #8c6b4e;
-    background-color: #f0e8de;
+    color: #ffffff;
+    background-color: #8c6b4e;
 }
 
-.menu-section .weight, .menu-section .price {
+.menu-section .dish-name {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.menu-section .weight {
+    font-size: 1em;
     color: #5c4a3b;
+    font-weight: normal;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.menu-section .price {
+    text-align: center; /* cenata na sreddi */
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .menu-pic {
     width: 100%;
-    max-height: 400px;
+    max-height: 450px;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 5px solid #c4a07f;
 }
 
 .menu-pic:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Footer */
 .footer {
     text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 40px;
+    padding-top: 30px;
     border-top: 2px solid #c4a07f;
     color: #5c4a3b;
-    font-family: 'Georgia', serif;
 }
 
+/* bbq ke videme dali ke koristam? */
+.bbq-image {
+    position: fixed;
+    width: 150px;
+    opacity: 0.8;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
 
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.bbq-image:hover {
+    transform: scale(1.1);
+}
+
+/* responsive */
 @media (max-width: 1024px) {
+    .container {
+        padding: 30px;
+    }
+
+    .navbar .logo {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .menu-section h2 {
+        font-size: 2.5em;
+    }
+
+    .menu-section li {
+        font-size: 1.2em;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 768px) {
     .container {
         padding: 20px;
     }
 
-    .navbar {
-        padding: 10px 0;
-    }
-
-    .logo {
+    .navbar .logo {
         width: 120px;
     }
 
-    .nav-links {
-        gap: 10px;
-    }
-
     .nav-links a {
-        padding: 8px 0;
+        font-size: 1em;
     }
 
     h1 {
@@ -193,35 +248,29 @@ h1 {
 
     .menu-section li {
         font-size: 1.1em;
-        padding: 10px 0;
     }
 
     .menu-pic {
         max-height: 300px;
     }
+
+    .language-selector button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .container {
         padding: 15px;
     }
 
-    .navbar {
-        padding: 10px 0;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    .nav-links {
-        gap: 8px;
+    .navbar .logo {
+        width: 80px;
     }
 
     .nav-links a {
         font-size: 0.9em;
-        padding: 8px 0;
-        text-align: center;
     }
 
     h1 {
@@ -234,52 +283,6 @@ h1 {
 
     .menu-section li {
         font-size: 1em;
-        padding: 8px 0;
-    }
-
-    .menu-pic {
-        max-height: 250px;
-    }
-
-    .language-selector button {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-
-    .language-selector {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 10px;
-    }
-
-    .navbar {
-        padding: 5px 0;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
-    .nav-links a {
-        font-size: 0.8em;
-        padding: 6px 0;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .menu-section h2 {
-        font-size: 1.6em;
-    }
-
-    .menu-section li {
-        font-size: 0.9em;
-        padding: 6px 0;
     }
 
     .menu-pic {
@@ -289,9 +292,5 @@ h1 {
     .language-selector button {
         padding: 8px 16px;
         font-size: 0.9em;
-    }
-
-    .language-selector {
-        margin-bottom: 15px;
     }
 }
