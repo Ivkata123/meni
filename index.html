@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-en="Restaurant Menu" data-de="Restaurant Menü" data-it="Menu del Ristorante" data-mk="Мени за Ресторанот">Restaurant Menu</title>
     <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <div class="container">
@@ -13,25 +15,82 @@
         <nav class="navbar">
             <img src="img/logo.jpg" alt="Restaurant Logo" class="logo" data-en="Restaurant Logo" data-de="Restaurant Logo" data-it="Logo del Ristorante" data-mk="Лого на Ресторанот">
             <ul class="nav-links">
-                <li><a href="#barbeque" data-en="Barbeque" data-de="Grillteller" data-it="Barbecue" data-mk="Скара">Barbeque</a></li>
-                <li><a href="#salads" data-en="Salads" data-de="Salate" data-it="Insalate" data-mk="Салати">Salads</a></li>
-                <li><a href="#wine" data-en="Wine" data-de="Wein" data-it="Vino" data-mk="Вино">Wine</a></li>
-                <li><a href="#whiskey" data-en="Whiskey" data-de="Whisky" data-it="Whiskey" data-mk="Виски">Whiskey</a></li>
-                <li><a href="#beer" data-en="Beer" data-de="Bier" data-it="Birra" data-mk="Пиво">Beer</a></li>
-                <li><a href="#beverages" data-en="Beverages" data-de="Getränke" data-it="Bevande" data-mk="Пијалоци">Beverages</a></li>
+                <li>
+                    <a href="#barbeque"
+                       data-en="Barbeque"
+                       data-de="Grillteller"
+                       data-it="Barbecue"
+                       data-mk="Скара">
+                        <i class="fas fa-fire"></i>
+                        <span data-en="Barbeque" data-de="Grillteller" data-it="Barbecue" data-mk="Скара">Barbeque</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#salads"
+                       data-en="Salads"
+                       data-de="Salate"
+                       data-it="Insalate"
+                       data-mk="Салати">
+                        <i class="fas fa-leaf"></i>
+                        <span data-en="Salads" data-de="Salate" data-it="Insalate" data-mk="Салати">Salads</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#wine"
+                       data-en="Wine"
+                       data-de="Wein"
+                       data-it="Vino"
+                       data-mk="Вино">
+                        <i class="fas fa-glass-wine"></i>
+                        <span data-en="Wine" data-de="Wein" data-it="Vino" data-mk="Вино">Wine</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#whiskey"
+                       data-en="Whiskey"
+                       data-de="Whisky"
+                       data-it="Whiskey"
+                       data-mk="Виски">
+                        <i class="fas fa-glass-whiskey"></i>
+                        <span data-en="Whiskey" data-de="Whisky" data-it="Whiskey" data-mk="Виски">Whiskey</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#beer"
+                       data-en="Beer"
+                       data-de="Bier"
+                       data-it="Birra"
+                       data-mk="Пиво">
+                        <i class="fas fa-beer"></i>
+                        <span data-en="Beer" data-de="Bier" data-it="Birra" data-mk="Пиво">Beer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#beverages"
+                       data-en="Beverages"
+                       data-de="Getränke"
+                       data-it="Bevande"
+                       data-mk="Пијалоци">
+                        <i class="fas fa-coffee"></i>
+                        <span data-en="Beverages" data-de="Getränke" data-it="Bevande" data-mk="Пијалоци">Beverages</span>
+                    </a>
+                </li>
             </ul>
+
         </nav>
         <h1 data-en="Restaurant Menu" data-de="Restaurant Menü" data-it="Menu del Ristorante" data-mk="Мени">Restaurant Menu</h1>
     </header>
     <nav class="language-selector">
-        <button onclick="changeLanguage('en')">English</button>
-        <button onclick="changeLanguage('de')">German</button>
-        <button onclick="changeLanguage('it')">Italian</button>
-        <button onclick="changeLanguage('mk')">Macedonian</button>
+        <button onclick="changeLanguage('en')" data-en="English" data-mk="Англиски" data-it="Inglese" data-de="Englisch"><i class="fas fa-globe"></i> English</button>
+        <button onclick="changeLanguage('de')" data-it="Tedesco" data-de="Deutsch" data-mk="Германски" data-en="German"><i class="fas fa-globe"></i> German</button>
+        <button onclick="changeLanguage('it')" data-mk="Италијански" data-de="Italienisch" data-en="Italian" data-it="Italiano"><i class="fas fa-globe"></i> Italian</button>
+        <button onclick="changeLanguage('mk')" data-it="Macedone" data-en="Macedonian" data-mk="Македонски" data-de="Mazedonisch"><i class="fas fa-globe"></i> Macedonian</button>
     </nav>
     <main class="menu">
         <section class="menu-section" id="barbeque">
-            <h2 data-en="Barbeque" data-de="Grillteller" data-it="Piatto di Barbecue" data-mk="Скара">Barbeque</h2>
+            <h2 data-en="Barbeque" data-de="Grillteller" data-it="Piatto di Barbecue" data-mk="Скара">
+                <i class="fas fa-fire"></i> Barbeque
+            </h2>
             <ul>
                 <li>
                     <span data-en="Kebab" data-de="Kebab" data-it="Kebab" data-mk="Ќебап">Kebab</span>
@@ -115,10 +174,10 @@
                 </li>
             </ul>
         </section>
-
-
         <section class="menu-section" id="salads">
-            <h2 data-en="Salads" data-de="Salate" data-it="Insalate" data-mk="Салати">Salads</h2>
+            <h2 data-en="Salads" data-de="Salate" data-it="Insalate" data-mk="Салати">
+                <i class="fas fa-leaf"></i> Salads
+            </h2>
             <ul>
                 <li>
                     <span data-en="Shop Salad Small" data-de="Shop Salat Klein" data-it="Insalata Shop Piccola" data-mk="Шопска Салата Мала">Shop Salad Small</span>
@@ -162,10 +221,10 @@
                 </li>
             </ul>
         </section>
-
-
         <section class="menu-section" id="wine">
-            <h2 data-en="Wine" data-de="Wein" data-it="Vino" data-mk="Вино">Wine</h2>
+            <h2 data-en="Wine" data-de="Wein" data-it="Vino" data-mk="Вино">
+                <i class="fas fa-wine-glass-alt"></i> Wine
+            </h2>
             <ul>
                 <li data-en="Red Wine" data-de="Rotwein" data-it="Vino Rosso" data-mk="Црвено Вино">Red Wine</li>
                 <li data-en="White Wine" data-de="Weißwein" data-it="Vino Bianco" data-mk="Бело Вино">White Wine</li>
@@ -173,7 +232,9 @@
         </section>
 
         <section class="menu-section" id="whiskey">
-            <h2 data-en="Whiskey" data-de="Whisky" data-it="Whiskey" data-mk="Виски">Whiskey</h2>
+            <h2 data-en="Whiskey" data-de="Whisky" data-it="Whiskey" data-mk="Виски">
+                <i class="fas fa-glass-whiskey"></i> Whiskey
+            </h2>
             <ul>
                 <li>
                     <span data-en="Yellow Rakija" data-de="Gelber Rakija" data-it="Rakija Gialla" data-mk="Жолта Ракија">Yellow Rakija</span>
@@ -221,53 +282,53 @@
                 </li>
             </ul>
         </section>
-
-
         <section class="menu-section" id="beer">
-                    <h2 data-en="Beer" data-de="Bier" data-it="Birra" data-mk="Пиво">Beer</h2>
-                    <ul>
-                        <li>
-                            <span data-en="Skopsko 0.5 L" data-de="Skopsko 0,5 L" data-it="Skopsko 0,5 L" data-mk="Скопско 0,5 Л">Skopsko 0.5 L</span>
-                            <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
-                        </li>
-                        <li>
-                            <span data-en="Skopsko 0.33 L" data-de="Skopsko 0,33 L" data-it="Skopsko 0,33 L" data-mk="Скопско 0,33 Л">Skopsko 0.33 L</span>
-                            <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
-                        </li>
-                        <li>
-                            <span data-en="Zlaten Dab 0.5 L" data-de="Zlaten Dab 0,5 L" data-it="Zlaten Dab 0,5 L" data-mk="Златен Даб 0,5 Л">Zlaten Dab 0.5 L</span>
-                            <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
-                        </li>
-                        <li>
-                            <span data-en="Krali Marko 0.5 L" data-de="Krali Marko 0,5 L" data-it="Krali Marko 0,5 L" data-mk="Крали Марко 0,5 Л">Krali Marko 0.5 L</span>
-                            <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
-                        </li>
-                        <li>
-                            <span data-en="Jelen 0.5 L" data-de="Jelen 0,5 L" data-it="Jelen 0,5 L" data-mk="Јелен 0,5 Л">Jelen 0.5 L</span>
-                            <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
-                        </li>
-                        <li>
-                            <span data-en="Heineken 0.25 L" data-de="Heineken 0,25 L" data-it="Heineken 0,25 L" data-mk="Хајнекен 0,25 Л">Heineken 0.25 L</span>
-                            <span class="price" data-en="100 denars" data-de="100 Denar" data-it="100 denari" data-mk="100 денари">100 denars</span>
-                        </li>
-                        <li>
-                            <span data-en="Heineken 0.4 L" data-de="Heineken 0,4 L" data-it="Heineken 0,4 L" data-mk="Хајнекен 0,4 Л">Heineken 0.4 L</span>
-                            <span class="price" data-en="120 denars" data-de="120 Denar" data-it="120 denari" data-mk="120 денари">120 denars</span>
-                        </li>
-                        <li>
-                            <span data-en="Tuborg 0.33 L" data-de="Tuborg 0,33 L" data-it="Tuborg 0,33 L" data-mk="Туборг 0,33 Л">Tuborg 0.33 L</span>
-                            <span class="price" data-en="100 denars" data-de="100 Denar" data-it="100 denari" data-mk="100 денари">100 denars</span>
-                        </li>
-                        <li>
-                            <span data-en="Tuborg 0.5 L" data-de="Tuborg 0,5 L" data-it="Tuborg 0,5 L" data-mk="Туборг 0,5 Л">Tuborg 0.5 L</span>
-                            <span class="price" data-en="120 denars" data-de="120 Denar" data-it="120 denari" data-mk="120 денари">120 denars</span>
-                        </li>
-                    </ul>
-
+            <h2 data-en="Beer" data-de="Bier" data-it="Birra" data-mk="Пиво">
+                <i class="fas fa-beer"></i> Beer
+            </h2>
+            <ul>
+                <li>
+                    <span data-en="Skopsko 0.5 L" data-de="Skopsko 0,5 L" data-it="Skopsko 0,5 L" data-mk="Скопско 0,5 Л">Skopsko 0.5 L</span>
+                    <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
+                </li>
+                <li>
+                    <span data-en="Skopsko 0.33 L" data-de="Skopsko 0,33 L" data-it="Skopsko 0,33 L" data-mk="Скопско 0,33 Л">Skopsko 0.33 L</span>
+                    <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
+                </li>
+                <li>
+                    <span data-en="Zlaten Dab 0.5 L" data-de="Zlaten Dab 0,5 L" data-it="Zlaten Dab 0,5 L" data-mk="Златен Даб 0,5 Л">Zlaten Dab 0.5 L</span>
+                    <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
+                </li>
+                <li>
+                    <span data-en="Krali Marko 0.5 L" data-de="Krali Marko 0,5 L" data-it="Krali Marko 0,5 L" data-mk="Крали Марко 0,5 Л">Krali Marko 0.5 L</span>
+                    <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
+                </li>
+                <li>
+                    <span data-en="Jelen 0.5 L" data-de="Jelen 0,5 L" data-it="Jelen 0,5 L" data-mk="Јелен 0,5 Л">Jelen 0.5 L</span>
+                    <span class="price" data-en="80 denars" data-de="80 Denar" data-it="80 denari" data-mk="80 денари">80 denars</span>
+                </li>
+                <li>
+                    <span data-en="Heineken 0.25 L" data-de="Heineken 0,25 L" data-it="Heineken 0,25 L" data-mk="Хајнекен 0,25 Л">Heineken 0.25 L</span>
+                    <span class="price" data-en="100 denars" data-de="100 Denar" data-it="100 denari" data-mk="100 денари">100 denars</span>
+                </li>
+                <li>
+                    <span data-en="Heineken 0.4 L" data-de="Heineken 0,4 L" data-it="Heineken 0,4 L" data-mk="Хајнекен 0,4 Л">Heineken 0.4 L</span>
+                    <span class="price" data-en="120 denars" data-de="120 Denar" data-it="120 denari" data-mk="120 денари">120 denars</span>
+                </li>
+                <li>
+                    <span data-en="Tuborg 0.33 L" data-de="Tuborg 0,33 L" data-it="Tuborg 0,33 L" data-mk="Туборг 0,33 Л">Tuborg 0.33 L</span>
+                    <span class="price" data-en="100 denars" data-de="100 Denar" data-it="100 denari" data-mk="100 денари">100 denars</span>
+                </li>
+                <li>
+                    <span data-en="Tuborg 0.5 L" data-de="Tuborg 0,5 L" data-it="Tuborg 0,5 L" data-mk="Туборг 0,5 Л">Tuborg 0.5 L</span>
+                    <span class="price" data-en="120 denars" data-de="120 Denar" data-it="120 denari" data-mk="120 денари">120 denars</span>
+                </li>
+            </ul>
         </section>
-
         <section class="menu-section" id="beverages">
-            <h2 data-en="Beverages" data-de="Getränke" data-it="Bevande" data-mk="Пијалоци">Beverages</h2>
+            <h2 data-en="Beverages" data-de="Getränke" data-it="Bevande" data-mk="Пијалоци">
+                <i class="fas fa-coffee"></i> Beverages
+            </h2>
             <ul>
                 <li>
                     <span data-en="Coca Cola 0.25 L" data-de="Coca Cola 0,25 L" data-it="Coca Cola 0,25 L" data-mk="Coca Cola 0,25 Л">Coca Cola 0.25 L</span>
@@ -337,6 +398,12 @@
         </section>
     </main>
 </div>
+<div class="footer">
+    <p class="thank-you" data-mk="Ви благодариме што го посетивте нашиот ресторан!" data-it="Grazie per aver visitato il nostro ristorante!" data-de="Vielen Dank für Ihren Besuch in unserem Restaurant!" data-en="Thank you for visiting our restaurant!">Thank you for visiting our restaurant!</p>
+    <p data-it="Ci auguriamo che ti piaccia il pasto e che torni presto!" data-mk="Се надеваме дека ќе уживате во вашиот оброк и ќе се вратите наскоро!" data-de="Wir hoffen, dass Sie Ihr Essen genießen und bald wiederkommen!" data-en="We hope you enjoy your meal and come back soon!">We hope you enjoy your meal and come back soon!</p>
+    <p>&copy; 2024 Кај Аце</p>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
